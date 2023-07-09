@@ -1,0 +1,401 @@
+@media (min-width: 1400px) {}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+        .hero-area .hero-content h1 {
+                font-size: 60px !important;
+        }
+
+        .mission-background {
+                left: -50%;
+                bottom: -9.9%;
+        }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+        .mission-background {
+                left: -50%;
+                bottom: -8.6%;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+        .mobile-nav {
+                position: absolute;
+                width: 100%;
+                transition: all linear 0.4s;
+                opacity: 0;
+                visibility: hidden;
+                opacity: 0;
+                z-index: 99;
+                background: #ffffff;
+        }
+
+        .mobile-nav.is-active {
+                opacity: 1;
+                visibility: visible;
+        }
+
+        .item-border {
+                border-bottom: 1px solid black;
+        }
+
+        .header-logo {
+                width: 100px;
+        }
+
+        .header-area .main-menu .menu {
+                padding: 0;
+        }
+
+        .header-area .main-menu .menu li {
+                display: block;
+        }
+
+        
+        .pb-120 {
+                padding-bottom: 90px;
+        }
+
+        .pt-120 {
+                padding-top: 90px;
+        }
+
+        /* -----------------------------------------
+        common style paragraph, heading start
+        -------------------------------------------- */
+
+        .heading {
+                font-size: 35px;
+                line-height: 40px
+        }
+
+        /* ----------------------------------------
+        common style paragraph, heading end
+        ------------------------------------------- */
+        .hero-area .hero-content h1 {
+                font-size: 50px !important;
+
+        }
+
+        /* about area start */
+        .about-left-content {
+                width: 100%;
+                top: 210px;
+        }
+
+        /* about area end */
+
+        /* our service area start */
+        .custom-icon-area {
+                width: 40px;
+                height: 40px;
+        }
+
+        /* our service area start */
+        /* latest project start */
+
+
+        .latest-project .projet-menu {
+                margin-left: 0;
+                display: block;
+            }
+           
+        /* latest project end */
+
+        /* our team area start */
+        .our-team {
+                height: 100%;
+        }
+
+        .team-background {
+                height: 130%;
+        }
+
+        /* happy client area start */
+        .happy-client-img {
+                width: 50px;
+                height: 50px;
+        }
+
+        .happy-client-background {
+                width: 40%;
+                top: -250px;
+
+
+        }
+
+        /* happy client area  end */
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+        .mobile-nav {
+                position: absolute;
+                width: 100%;
+                transition: all linear 0.4s;
+                opacity: 0;
+                visibility: hidden;
+                opacity: 0;
+                z-index: 99;
+                background: #ffffff;
+        }
+
+        .mobile-nav.is-active {
+                opacity: 1;
+                visibility: visible;
+        }
+
+        .item-border {
+                border-bottom: 1px solid black;
+        }
+
+        .header-logo {
+                width: 100px;
+        }
+
+        .header-area .main-menu .menu {
+                padding: 0;
+        }
+
+        .header-area .main-menu .menu li {
+                display: block;
+        }
+
+        /* -----------------------------------------
+        common style paragraph, heading start
+        -------------------------------------------- */
+
+        .heading {
+                font-size: 38px;
+        }
+
+        /* ----------------------------------------
+        common style paragraph, heading end
+        ------------------------------------------- */
+        .hero-area .hero-content h1 {
+                font-size: 50px !important;
+
+        }
+
+        /* about area start */
+        .about-left-content {
+                top: 235px;
+        }
+
+        /* about area end */
+
+        /* latest project start */
+        .latest-project .menu {
+                position: static !important;
+                padding: 0;
+        }
+
+        .latest-project .menu li {
+                margin: 0;
+        }
+
+        /* latest project end */
+
+        /* our team area start */
+        .our-team {
+                height: 100%;
+        }
+
+        .team-background {
+                height: 120%;
+        }
+
+        /* happy client area start */
+        .happy-client-img {
+                width: 70px;
+                height: 70px;
+        }
+
+        .happy-client-background {
+                width: 30%;
+                top: -100px;
+                z-index: -9;
+                right: 0;
+
+
+        }
+
+        /* happy client area  end */
+}
+
+@media (max-width: 575px) {
+        .mobile-nav {
+                position: absolute;
+                width: 100%;
+                transition: all linear 0.4s;
+                opacity: 0;
+                visibility: hidden;
+                opacity: 0;
+                z-index: 99;
+                background: #ffffff;
+        }
+
+        .mobile-nav.is-active {
+                opacity: 1;
+                visibility: visible;
+        }
+
+        .item-border {
+                border-bottom: 1px solid black;
+        }
+
+        .header-logo {
+                width: 100px;
+        }
+
+        .header-area .main-menu .menu {
+                padding: 0;
+        }
+
+        .header-area .main-menu .menu li {
+                display: block;
+        }
+
+        /* --------------------------------------------
+        margin and padding area start
+        ---------------------------------------------- */
+        .pt-120 {
+                padding-top: 80px;
+        }
+
+        .pb-120 {
+                padding-bottom: 80px;
+        }
+
+        .pb-200 {
+                padding-bottom: 200px;
+        }
+
+        .pt-60 {
+                padding-top: 60px;
+        }
+
+        .pb-60 {
+                padding-bottom: 60px;
+        }
+
+        /* -----------------------------------------
+        margin and padding area end
+       --------------------------------------------- /* 
+
+
+        /*-----------------------------------------
+        custom icon area start
+        -----------------------------------------*/
+        .custom-icon-area {
+                width: 55px;
+                height: 55px;
+                line-height: 55px;
+                margin-right: 15px;
+        }
+
+        /* -----------------------------------------
+        custom icon area end
+        -----------------------------------------*/
+
+
+        /* -----------------------------------------
+        common style paragraph, heading start
+        -------------------------------------------- */
+
+        .heading {
+                font-size: 38px;
+                line-height: 50px;
+        }
+
+        .para {
+                font-family: var(--default_font);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
+        }
+
+        /* ----------------------------------------
+        common style paragraph, heading end
+        ------------------------------------------- */
+
+
+        .hero-area .hero-content h1 {
+                font-size: 40px !important;
+
+        }
+
+        /*----------------------------------------
+         about us area start
+         ----------------------------------------- */
+        .about-left-content {
+                position: static !important;
+                width: 100%;
+        }
+
+        /* about us area end */
+
+        /* ------------------------------------
+        service area start 
+        ------------------------------------*/
+        .service-item {
+                padding: 10px;
+        }
+
+        /* ------------------------------------
+        service area end 
+        ------------------------------------*/
+
+
+        /* ------------------------------------
+        latest project start
+        ---------------------------------------- */
+        .latest-project .projet-menu {
+                display: block;
+                margin: 0;
+        }
+        .button-group {
+                position: static  !important;
+            }
+       
+
+        .round-1 {
+                height: 60px;
+                width: 60px;
+        }
+
+        .round-2 {
+                height: 40px;
+                width: 40px;
+        }
+
+        .project-image:hover .project-content {
+                opacity: 1;
+        }
+
+        /* ------------------------------------
+    latest project end
+    ---------------------------------------- */
+        /*--------------------------------------
+our team area start
+---------------------------------------- */
+        .our-team {
+                height: 100%;
+        }
+
+        .team-background {
+                height: 125%;
+        }
+
+        /* ------------------------------------
+    happy client area start 
+    ---------------------------------------- */
+        .happy-client-img {
+                width: 50px;
+                height: 50px;
+        }
+
+        /* ------------------------------------
+   happy client area  end
+    ---------------------------------------- */
+
+}

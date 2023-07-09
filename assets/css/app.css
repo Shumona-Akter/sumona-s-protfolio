@@ -1,0 +1,802 @@
+/*----------------------------------------------
+
+Theme   : hudai
+Version : 1.0.1
+Author  : CODIXEN
+Support : https://codixen.com/envato-support
+
+----------------------------------------------*/
+
+/*----------------------------------------------
+
+[Content Index]
+
+1. Default CSS
+2. Header Area
+3. Hero Area
+
+----------------------------------------------*/
+
+/*----------------------------------------------
+1. Default CSS
+----------------------------------------------*/
+
+:root {
+    /* theme colors */
+    --primary_color: #EF3D5B;
+    --secondary_color: #163967;
+    --gray200_color: #E3E3E3;
+    --gray700_color: #6B6D7E;
+    --gray800_color: #38495F;
+    --black_color: #000000;
+    --white_color: #FFFFFF;
+
+    /* theme fonts */
+    --primary_font: 'Jost', sans-serif;
+    --default_font: 'Roboto', sans-serif;
+
+    /* theme transation */
+    --transation: .3s all ease-in-out;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white_color);
+    color: var(--gray700_color);
+    font-family: var(--default_font);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--secondary_color);
+    font-family: var(--primary_font);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+input:focus,
+input:active {
+    box-shadow: none !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.btn {
+    font-family: var(--primary_font);
+    font-weight: 600;
+    padding: 15px 30px;
+    transition: var(--transation);
+}
+
+.btn-primary {
+    background-color: var(--primary_color);
+    border-color: var(--primary_color);
+}
+.custom-btn-secondary {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+}
+
+/* --------------------------------------------
+margin and padding area start
+---------------------------------------------- */
+.pt-120{
+    padding-top: 120px;
+}
+.pb-120{
+    padding-bottom: 120px;
+}
+.pb-200{
+    padding-bottom: 200px;
+}
+.pt-60{
+    padding-top: 60px;
+}
+.pb-60{
+    padding-bottom: 60px;
+}
+
+/* --------------------------------------------
+margin and padding area end
+---------------------------------------------- */
+.gray-700{
+    color: var(--gray700_color);
+}
+.gray-200{
+    color: var(--gray200_color);
+}
+.color-primary{
+    color: var(--primary_color);
+}
+.color-secondary{
+    color: var(--secondary_color);
+}
+.bg-gray200{
+    background: var(--gray200_color);
+}
+/* ------------------------------------------
+width area satrt 
+--------------------------------------------*/
+.w-55{
+    width: 55%;
+}
+.w-30{
+    width: 40%;
+}
+.w-85{
+    width: 85%;
+}
+/* ------------------------------------------
+width area end 
+--------------------------------------------*/
+.z-1{
+    z-index: 1;
+}
+/* transfron area */
+.transfrom-center{
+    transform: translate(-50%, -50%);
+}
+.transition-03{
+    transition: all linear 0.3s;
+}
+/* --------------------
+custom icon area start
+----------------------*/
+.custom-icon-area{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 65px;
+    margin-right: 30px;
+}
+/* --------------------
+custom icon area end
+----------------------*/
+
+
+/* -----------------------------------------
+font family start
+-------------------------------------------- */
+.roboto-font{
+    font-family: var(--default_font);
+}
+.jost-font{
+    font-family: var(--primary_font);
+}
+.font-Kumbh{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+/* -----------------------------------------
+font family end
+-------------------------------------------- */
+.border-radious-5{
+    border-radius: 5px;
+}
+/* -----------------------------------------
+common style paragraph, heading start
+-------------------------------------------- */
+.title{
+    font-family: var(--primary_font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--primary_color);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.heading{
+    font-family: var(--primary_font);
+    font-style: normal;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: var(--secondary_color);
+    padding: 20px 0 30px 0;
+}
+.sub-heading{
+    font-size: 28px;
+    font-weight: 600;
+}
+.small-heading{
+    font-size: 20px;
+    font-weight: 500;
+}
+.para{
+    font-family: var(--default_font);
+    font-size: 16px;
+    line-height: 30px;
+}
+.border{
+    border: 1px solid var(--gray200_color);
+}
+
+/* -----------------------------------------
+common style paragraph, heading end
+-------------------------------------------- */
+
+/* progress bar start */
+.progress-bar{
+    height: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: visible;
+}
+.progress-per{
+    height: 14px;
+    background: var(--primary_color);
+    border-radius: 10px;
+    position: relative;
+}
+.progress-per::before{
+    content: attr(per);
+    position: absolute;
+    right: 0;
+    padding: 3px;
+    top: -40px;
+    background: var(--primary_color);
+}
+.progress-per::after{
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: -18px;
+    width: 15px;
+    height: 15px;
+    background: var(--primary_color);
+    clip-path: polygon(100% 0, 0 0, 50% 100%)
+}
+
+/* ----------------------------------------------
+    progress bar start
+---------------------------------------------- */
+/*----------------------------------------------
+2. Header Area
+----------------------------------------------*/
+
+/* header top */
+.header-area .header-top {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--gray200_color);
+}
+
+.header-area .header-top .header-top-item {
+    padding: 0 10px;
+}
+
+/* main menu */
+.header-area .main-menu {
+    padding: 30px 0;
+}
+
+.header-area .main-menu .menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.header-area .main-menu .menu li a {
+    color: var(--gray800_color);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--primary_font);
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+.header-area .main-menu .menu li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary_color);
+    transition: var(--transation);
+}
+
+.header-area .main-menu .menu li:hover::before {
+    width: 100%;
+}
+
+.header-area .main-menu .search {
+    position: relative;
+    overflow: hidden;
+}
+
+.header-area .main-menu .search span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* menu responsive */
+.mobile-menu{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: block;
+    width: 20px;
+    cursor: pointer;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    z-index: 9999;
+}
+
+.mobile-menu .bar, .mobile-menu::after, .mobile-menu::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(50px);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.mobile-menu.is-active::before{
+    transform: rotate(-45deg) translate(-7px, 5.5px);
+    background: #000000;
+}
+.mobile-menu.is-active::after{
+    transform: rotate(45deg) translate(-5.3px, -5px);
+    background: #000000;
+}
+
+.mobile-menu.is-active .bar{
+    opacity: 0;
+}
+/*----------------------------------------------
+2. Hero Area
+----------------------------------------------*/
+
+.hero-area {
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-area .hero-content {
+    padding: 130px 0;
+}
+
+.hero-area .hero-content h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--primary_color);
+    text-transform: uppercase;
+}
+
+.hero-area .hero-content h1 {
+    font-size: 75px;
+    text-transform: capitalize;
+}
+
+
+/* -------------------------------------
+about area start
+----------------------------------------- */
+.about-left-content{
+    width: 75%;
+    padding: 40px;
+    background: var(--secondary_color);
+    right: 10px;
+    top: 270px;
+    border-radius: 0px 0px 102.5px 0px;
+
+}
+.about-content h6{
+    font-family: var(--primary_font);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* -------------------------------------
+about area end
+----------------------------------------- */
+
+/* -------------------------------------
+service area start
+----------------------------------------- */
+.service-area{
+    background: rgba(239, 61, 91, 0.04);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.service-item{
+    background-color: var(--white_color);
+    transition: all linear 0.3s;
+}
+.service-area .custom-icon-area{
+    background: rgba(239, 61, 91, 0.04);
+    transition: all linear 0.3s;
+
+}
+.service-area h6{
+    font-family: var(--primary_font);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    color: var(--gray800_color);
+    transition: all linear 0.3s;
+
+}
+.service-item:hover{
+    color:var(--white_color);
+    background-color: var(--primary_color);
+}
+.service-item:hover h6{
+    color: var(--white_color);
+}
+.service-item:hover .custom-icon-area{
+    background-color: var(--white_color);
+}
+/* -------------------------------------
+service area end
+----------------------------------------- */
+
+
+/* ------------------------------------
+latest project start
+---------------------------------------- */
+.latest-project .menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.latest-project .projet-menu {
+    color: var(--gray800_color);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px ;
+    border-radius: 5px;
+    transition: all linear 0.3s;
+    border: none;
+    background: transparent;
+    margin-left: 20px;
+}
+.latest-project .projet-menu:hover {
+    background: var(--primary_color);
+    color: var(--white_color);
+}
+.project-video-img{
+    background: url(../media/project/project_1.png) no-repeat center / cover;
+    height: 375px;
+}
+.project-image{
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.project-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    
+}
+.round-1{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.round-2{
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+}
+.round-3{
+    height: 70px;
+    width: 70px;
+    line-height: 65px;
+}
+.project-content{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(9, 7, 33, 0) 29.36%, rgba(4, 19, 38, 0.7) 100%);
+    border-radius: 5px;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+.project-image:hover .project-content{
+    opacity: 1;
+}
+
+/* ------------------------------------
+latest project end
+---------------------------------------- */
+
+
+/* -------------------------------------
+our mission area start 
+----------------------------------------*/
+.mission-container{
+    box-shadow: 5px -5px 5px rgba(19, 16, 34, 0.05);
+    
+}
+
+.mission-background {
+    left: -50%;
+    bottom: -10.2%;
+    z-index: -9;
+}
+
+.mission-left-part{
+    z-index: 99;
+}
+
+
+/*--------------------------------------
+our mission area end
+---------------------------------------- */
+
+
+/*--------------------------------------
+our team area start
+---------------------------------------- */
+.our-team{
+    height: 1400px;
+}
+.team-background{
+    position: absolute;
+    background: url(../media/team/background.png) no-repeat center / cover;
+    height: 110%;
+    width: 100%;
+    top: -200px;
+    z-index: -1 !important;
+}
+
+.team-icon{
+    width: 50px;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    right: 30px;
+    opacity: 0;
+}
+.team-icon-area{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: var(--gray200_color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all linear 0.3s;
+    
+
+}
+.team-icon-area:hover{
+    background: var(--primary_color);
+}
+.team-icon-area:hover a{
+    color: #fff;
+}
+.team-member-area:hover .team-icon{
+    opacity: 1;
+}
+.counter-icon{
+    width: 60px;
+    height: 60px;
+    background: rgba(107, 109, 126, 0.2);
+    border: 2px solid #FFFFFF;
+    line-height: 60px;
+    
+}
+/*--------------------------------------
+our team area end
+---------------------------------------- */
+
+
+/*--------------------------------------
+our Happy client area end
+---------------------------------------- */
+.happy-client-background{
+    width: 45%;
+    top: -530px;
+    z-index: -9;
+    right: 0;
+
+    
+}
+
+.happy-client-img{
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+.client{
+    background: #FFFFFF;
+    box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 
+    0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+}
+.client-quote{
+    color: var(--gray200_color);
+    z-index: -1;
+}
+/*--------------------------------------
+our happy client area end
+---------------------------------------- */
+.call_us{
+    background: url(../media/banner/cta-bg.png) no-repeat center / cover;
+}
+.phone-round{
+    width: 60px;
+    height: 60px;
+
+}
+.phone-icon{
+    top: -11px;
+     right: 10px;
+}
+/*--------------------------------------
+our recent post area start
+---------------------------------------- */
+.recent-post-date{
+    bottom: -20px;
+    left: 25px;
+    width: 48px;
+    height: 70px;
+    text-align: center;
+    background: var(--white_color);
+}
+
+/*--------------------------------------
+our recent post area end
+---------------------------------------- */
+/*--------------------------------------
+home page footer start 
+---------------------------------------- */
+.home-page-footer{
+    background: url(../media/banner/footer-bg.png) no-repeat center / cover;
+}
+.home-page-footer a:hover{
+    color: var(--white_color);
+}
+.home-page-footer input{
+    background: #000000;
+    outline: none;
+    resize: none;
+    border: none;
+}
+.home-page-footer input::placeholder{
+    color: var(--white_color);
+}
+/*--------------------------------------
+home page footer end  
+---------------------------------------- */
+
+/* home page footer start */
+.header-area .main-menu .menu li:hover::before {
+    width: 100%;
+}
+
+
+/* contact page start */
+.contact-logo .contact-icon{
+    background: rgba(239, 61, 91, 0.09);
+    transition: all linear 0.3s;
+}
+.contact-logo .contact-icon:hover{
+    background: var(--primary_color);
+    color: var(--white_color);
+}
+.location_track{
+    background: url(../media/contact_page/location.png) no-repeat ;
+    background-position: bottom right;
+    background-size: cover;
+    padding: 300px 0;
+}
+/* contact page end */
+
+/* faq page start */
+.search-faq{
+    top:0; right: 0px;
+     width: 50px;  
+     height: 100%; 
+     border-radius: 0 40% 40% 0; 
+     line-height: 40px;
+     background: var(--secondary_color);
+}
+
+.accordion {
+    margin-bottom: 1rem;
+    border: 1px solid var(--gray200_color);
+  }
+
+  .accordion .accordion-header {
+    cursor: pointer;
+    padding: 1rem;
+  }
+
+  .accordion .accordion-header h2 {
+    margin: 0;
+  }
+
+  .accordion .accordion-header i {
+    float: right;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .accordion .accordion-body {
+    padding: 1rem;
+    display: none;
+  }
+
+  .accordion .active i {
+    transform: rotate(180deg);
+  }
+/* faq page end */
+
+/* single team  page start */
+.single-team-progress-area{
+    width: 85%;
+    box-shadow: 2px 2px  6.4px rgba(19, 16, 34, 0.2);
+}
+.single-team-progress-area .progress-bar{
+    height: 10px;
+    background: var(--gray200_color);
+    border-radius: 10px;
+    overflow: visible;
+}
+/* single team  page end */
+/* bolg_cclassic page :start */
+.bolg_show{
+    box-shadow: 2px 2px  6.4px rgba(19, 16, 34, 0.2);
+}
+.bolg_show .round-2{
+    background: var(--gray800_color);
+}
+.bolg_show:hover{
+    background: var(--primary_color);
+    color: var(--white_color) !important;
+}
+.bolg_show:hover h1{
+    color: var(--white_color) ;
+}
+.bolg_show:hover .round-2{
+    background: var(--primary_color);
+}
+/* bolg_cclassic page end */
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    
+}
